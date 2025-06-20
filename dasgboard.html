@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Mystery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body onload="checkLogin()">
+  <header>
+    <h1>Welcome to Your Space</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Free Content</h2>
+      <p>This part is accessible to everyone.</p>
+    </section>
+
+    <section id="lockedContent" style="display: none;">
+      <h2>Registered Users Only</h2>
+      <p>This content is visible only after login.</p>
+      <p>You can upload or read many reflections and writings here.</p>
+    </section>
+  </main>
+</body>
+</html>
